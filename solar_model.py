@@ -23,7 +23,7 @@ def calculate_force(body, space_objects):
         sin = (obj.y - body.y) / r
         body.Fx += gravitational_constant * body.m * obj.m * cos / (r ** 2)
         body.Fy += gravitational_constant * body.m * obj.m * sin / (r ** 2)
-        # print(space_objects[0].Fx)
+        print(space_objects[0].Fx)
 
 
 def move_space_object(body, dt):
